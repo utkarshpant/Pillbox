@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#20998f</color>
+    <color name="pillbox_green_primary_dark">#1a7d68</color>
+    <color name="pillbox_green_primary">#20998f</color>
+    <color name="pillbox_accent_green">#9ecbc7</color>
+    <color name="pillbox_green_accent">#9ecbc7</color>
+    <color name="background_material_dark">#222222</color>
+    <color name="pillbox_background_dark">#222222</color>
+    <color name="background_material_light">#ffffff</color>
+    <color name="pillbox_error_accent_red">#ea8e87</color>
+</resources>

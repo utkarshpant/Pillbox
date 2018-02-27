@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.radical.pillbox.SignUpActivity"
+    android:layout_margin="10dp"
+    android:theme="@style/PillboxGreenTheme">
+
+    <TextView
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="11dp"
+        android:gravity="left"
+        android:text="←"
+        android:textAlignment="gravity"
+        android:textColor="@color/pillbox_green_primary_dark"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/signUpString"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/backButton"
+        android:fontFamily="@font/montserrat_light"
+        android:text="Sign Up"
+        android:textSize="30sp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/pillbox_background_dark"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/firstNameEditText"
+        android:hint="First Name"
+        android:textColorHint="@color/pillbox_green_accent"
+        android:textColor="#000000"
+        android:layout_below="@+id/signUpString"
+        android:fontFamily="@font/montserrat_light"
+        android:layout_marginLeft="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lastNameEditText"
+        android:hint="Last Name"
+        android:textColor="#000000"
+        android:textColorHint="@color/pillbox_green_accent"
+        android:fontFamily="@font/montserrat_light"
+        android:layout_below="@id/firstNameEditText"
+        android:layout_marginLeft="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phoneEditText"
+        android:hint="Phone"
+        android:textColorHint="@color/pillbox_green_accent"
+        android:textColor="#000000"
+        android:layout_below="@+id/lastNameEditText"
+        android:fontFamily="@font/montserrat_light"
+        android:layout_marginLeft="10dp"
+        android:inputType="phone"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ageEditText"
+        android:hint="Age"
+        android:textColorHint="@color/pillbox_green_accent"
+        android:textColor="#000000"
+        android:layout_below="@id/phoneEditText"
+        android:fontFamily="@font/montserrat_light"
+        android:layout_marginLeft="10dp"
+        android:inputType="numberDecimal"
+        android:elevation="8dp"/>
+
+</RelativeLayout>

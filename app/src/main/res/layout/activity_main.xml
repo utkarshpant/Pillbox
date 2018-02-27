@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context="com.radical.pillbox.MainActivity">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/CloseActivityCross"
+    android:text="@string/cross"
+    android:textSize="50sp"
+    android:padding="10dp"
+    android:fontFamily="@font/montserrat_bold"
+    android:textColor="@color/pillbox_green_primary_dark" />
+
+<TextView
+    android:id="@+id/IntroString"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/CloseActivityCross"
+    android:fontFamily="@font/montserrat_light"
+    android:padding="10dp"
+    android:text="Welcome to Pillbox."
+    android:textColor="#000000"
+    android:textSize="30sp"
+    android:gravity="left"
+    android:textAlignment="gravity"/>
+
+<EditText
+    android:id="@+id/EmailEditText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/IntroString"
+    android:layout_marginLeft="10dp"
+    android:fontFamily="@font/montserrat_light"
+    android:hint="email@example.com"
+    android:inputType="textEmailAddress"
+    android:textColor="@color/pillbox_background_dark"
+    android:textColorHint="@color/pillbox_accent_green" />
+
+<EditText
+    android:id="@+id/PasswordEditText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/EmailEditText"
+    android:layout_marginStart="10dp"
+    android:fontFamily="@font/montserrat_light"
+    android:hint="password"
+    android:inputType="textPassword"
+    android:textColor="@color/pillbox_background_dark"
+    android:textColorHint="@color/pillbox_accent_green" />
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/FooterString"
+    android:textColor="#000000"
+    android:textSize="12sp"
+    android:text="Designed for the Semester 4 project by Aditya Pansare and Utkarsh Pant. 2018."
+    android:layout_centerHorizontal="true"
+    android:textAlignment="center"
+    android:fontFamily="@font/montserrat_light"
+    android:layout_alignParentBottom="true"/>
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:id="@+id/SignInButton"
+    android:background="@drawable/round_button"
+    android:text="Sign In"
+    android:textSize="15sp"
+    android:textColor="@color/pillbox_green_primary_dark"
+    android:layout_below="@+id/PasswordEditText"/>
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:id="@+id/SignUpButton"
+    android:background="@drawable/round_button"
+    android:text="Sign Up"
+    android:textSize="15sp"
+    android:textColor="@color/pillbox_green_primary_dark"
+    android:layout_below="@+id/PasswordEditText"
+    android:layout_toRightOf="@id/SignInButton"/>
+
+</RelativeLayout>
