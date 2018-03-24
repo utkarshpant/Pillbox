@@ -32,9 +32,9 @@
         android:text="Sign Up"
         android:textSize="30sp"
         android:padding="10dp"
+        android:paddingTop="15dp"
         android:layout_marginTop="10dp"
-        android:textColor="@color/pillbox_background_dark"
-        />
+        android:textColor="@color/pillbox_background_dark" />
 
 
     <EditText
@@ -62,11 +62,22 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/emailSignUpEditText"
+        android:hint="Email"
+        android:textColor="#000000"
+        android:textColorHint="@color/pillbox_green_accent"
+        android:fontFamily="@font/montserrat_light"
+        android:layout_below="@id/lastNameEditText"
+        android:layout_marginLeft="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:id="@+id/phoneEditText"
         android:hint="Phone"
         android:textColorHint="@color/pillbox_green_accent"
         android:textColor="#000000"
-        android:layout_below="@+id/lastNameEditText"
+        android:layout_below="@+id/emailSignUpEditText"
         android:fontFamily="@font/montserrat_light"
         android:layout_marginLeft="10dp"
         android:inputType="phone"/>
@@ -83,5 +94,34 @@
         android:layout_marginLeft="10dp"
         android:inputType="numberDecimal"
         android:elevation="8dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/submitSignUpButton"
+        android:layout_below="@id/ageEditText"
+        android:background="@drawable/round_button"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/pillbox_green_primary_dark"
+        android:text="Sign Up"
+        android:elevation="7.5dp"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/cancelSignUpButton"
+        android:layout_below="@id/ageEditText"
+        android:layout_toRightOf="@id/submitSignUpButton"
+        android:background="@drawable/round_button"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/pillbox_green_primary_dark"
+        android:text="Cancel"
+        android:elevation="6dp"/>
+
 
 </RelativeLayout>

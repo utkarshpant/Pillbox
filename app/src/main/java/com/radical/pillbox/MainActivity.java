@@ -39,10 +39,8 @@ import static com.radical.pillbox.R.id.CloseActivityCross;
                 @SuppressLint("ResourceAsColor")
                 @Override
                 public void onClick(View view) {
-                    Log.d("Event:", "Signed in with correct credentials.");
-                    if (email.getText().toString().isEmpty()) {
-                        Toast.makeText(MainActivity.this, "Signed in with creds.", Toast.LENGTH_SHORT).show();
-                    }
+                    Intent intent = new Intent(MainActivity.this, CustomerActivity.class);
+                    startActivity(intent);
                 }
             });
 
@@ -51,7 +49,7 @@ import static com.radical.pillbox.R.id.CloseActivityCross;
                 public void onClick(View view) {
                     Intent signUpIntent = new Intent(MainActivity.this, SignUpActivity.class);
                     startActivity(signUpIntent);
-                    Log.d("Signn Up","Signed Up mofo");
+                    Log.d("Sign Up","Signed Up.");
                 }
             });
         }

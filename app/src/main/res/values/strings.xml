@@ -8,4 +8,11 @@
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="backArrow">\u2190</string>
+    <string name="facebook_app_id">181826232599436</string>
+    <string name="fb_login_protocol_scheme">fb181826232599436</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_customer">CustomerActivity</string>
+
 </resources>

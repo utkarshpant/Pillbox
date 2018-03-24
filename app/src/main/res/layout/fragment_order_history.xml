@@ -1,0 +1,17 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.radical.pillbox.OrderHistoryFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order History Fragment!"
+        android:id="@+id/order_history_intro"
+        android:textColor="@color/pillbox_background_dark"
+        android:layout_gravity="center"
+        android:textSize="30sp"/>
+
+</FrameLayout>
